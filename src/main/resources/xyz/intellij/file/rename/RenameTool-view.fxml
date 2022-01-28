@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="xyz.intellij.file.rename.MyReNameController">
+    <padding>
+        <Insets bottom="5.0" left="12.0" right="12.0" top="5.0"/>
+    </padding>
+    <Label fx:id="welcomeText"/>
+    <HBox>
+        <HBox >
+            <Label text="路径: " style="-fx-font-size: 18"/>
+            <TextField fx:id="path"  text="path" />
+        </HBox>
+        <HBox >
+            <Label text="正则字符 " style="-fx-font-size: 18"/>
+            <TextField fx:id="str" text="pattern" />
+        </HBox>
+    </HBox>
+    <Button text="替换" onAction="#onHelloButtonClick" style="-fx-font-size: 18"/>
+    <TextArea fx:id="console"/>
+</VBox>
